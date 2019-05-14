@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Fri May 10 10:08:23 2019
+# Process ID: 4520
+# Current directory: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.runs/synth_1
+# Command line: vivado.exe -log processor_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor_top.tcl
+# Log file: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.runs/synth_1/processor_top.vds
+# Journal file: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source processor_top.tcl -notrace

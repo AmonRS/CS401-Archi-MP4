@@ -1,0 +1,20 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CU_DPU.srcs/sources_1/new/adder.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/alu.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/control_unit.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/data_path.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/flipflop.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/main_decoder.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/mem_data.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/mem_instructions.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/mux2.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/processor.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/registerfile.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/signextender.vhd" \
+"../../../../CU_DPU.srcs/sources_1/new/processor_top.vhd" \
+"../../../../CU_DPU.srcs/sim_1/new/cu_test.vhd" \
+"../../../../CU_DPU.srcs/sim_1/new/processor_testbench.vhd" \
+
+# Do not sort compile order
+nosort

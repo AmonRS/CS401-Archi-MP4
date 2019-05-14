@@ -1,0 +1,332 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Mon Apr 29 09:13:26 2019
+# Process ID: 2324
+# Current directory: Z:/CS-401-1-CompArch/MP3/CU_DPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6824 Z:\CS-401-1-CompArch\MP3\CU_DPU\CU_DPU.xpr
+# Log file: Z:/CS-401-1-CompArch/MP3/CU_DPU/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/MP3/CU_DPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 782.125 ; gain = 54.328
+update_compile_order -fileset sources_1
+close [ open Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/alu.vhd w ]
+add_files Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/alu.vhd
+update_compile_order -fileset sources_1
+close [ open Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/flipflop.vhd w ]
+add_files Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/flipflop.vhd
+update_compile_order -fileset sources_1
+close [ open Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/adder.vhd w ]
+add_files Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/adder.vhd
+update_compile_order -fileset sources_1
+close [ open Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd w ]
+add_files Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd
+update_compile_order -fileset sources_1
+close [ open Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/registerfile.vhd w ]
+add_files Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/registerfile.vhd
+update_compile_order -fileset sources_1
+close [ open Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/signextender.vhd w ]
+add_files Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/signextender.vhd
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: control_unit
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 961.484 ; gain = 111.387
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'control_unit' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/control_unit.vhd:15]
+INFO: [Synth 8-3491] module 'main_decoder' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/main_decoder.vhd:6' bound to instance 'main_dc' of component 'main_decoder' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/control_unit.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'main_decoder' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/main_decoder.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'main_decoder' (1#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/main_decoder.vhd:15]
+WARNING: [Synth 8-3848] Net pcsrc in module/entity control_unit does not have driver. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/control_unit.vhd:9]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (2#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/control_unit.vhd:15]
+WARNING: [Synth 8-3331] design control_unit has unconnected port pcsrc
+WARNING: [Synth 8-3331] design control_unit has unconnected port zero
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 1015.801 ; gain = 165.703
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.801 ; gain = 165.703
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1015.801 ; gain = 165.703
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mclk'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[4]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[5]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[6]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[7]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[6]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[5]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[4]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1371.680 ; gain = 521.582
+9 Infos, 32 Warnings, 29 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:16 . Memory (MB): peak = 1371.680 ; gain = 521.582
+set_property top data_path [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1378.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'data_path' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+ERROR: [Synth 8-78] a value must be associated with generic width [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:8]
+ERROR: [Synth 8-285] failed synthesizing module 'data_path' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1396.980 ; gain = 18.305
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1396.980 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'data_path' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/flipflop.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (1#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (2#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:87]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (3#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:89]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/registerfile.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/registerfile.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (4#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/registerfile.vhd:21]
+ERROR: [Synth 8-549] port width mismatch for port 'ra1': port width = 5, actual width = 8 [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:93]
+ERROR: [Synth 8-549] port width mismatch for port 'ra2': port width = 5, actual width = 8 [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:94]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'wrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:99]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:103]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/signextender.vhd:5' bound to instance 'se' of component 'signext' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:107]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:110]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/alu.vhd:11' bound to instance 'mainalu' of component 'alu' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:114]
+ERROR: [Synth 8-285] failed synthesizing module 'data_path' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1401.484 ; gain = 4.504
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1401.484 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'data_path' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/flipflop.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (1#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (2#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:87]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:88]
+INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (3#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:89]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/registerfile.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/registerfile.vhd:22]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'regfile' (4#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/registerfile.vhd:22]
+ERROR: [Synth 8-549] port width mismatch for port 'ra1': port width = 8, actual width = 5 [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:92]
+ERROR: [Synth 8-549] port width mismatch for port 'ra2': port width = 8, actual width = 5 [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:92]
+ERROR: [Synth 8-549] port width mismatch for port 'wa3': port width = 8, actual width = 5 [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:92]
+	Parameter width bound to: 5 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'wrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:99]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:103]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/signextender.vhd:5' bound to instance 'se' of component 'signext' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:107]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:110]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/alu.vhd:11' bound to instance 'mainalu' of component 'alu' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:114]
+ERROR: [Synth 8-285] failed synthesizing module 'data_path' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1403.973 ; gain = 2.488
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+close [ open Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd w ]
+add_files Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd
+update_compile_order -fileset sources_1
+set_property top processor [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1410.777 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'processor' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+ERROR: [Synth 8-78] a value must be associated with generic width [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:16]
+ERROR: [Synth 8-285] failed synthesizing module 'processor' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1410.777 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1412.438 ; gain = 1.660
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'processor' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-5640] Port 'memread' is missing in component declaration [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:30]
+WARNING: [Synth 8-5640] Port 'regread' is missing in component declaration [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:30]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/control_unit.vhd:5' bound to instance 'cont' of component 'control_unit' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:59]
+ERROR: [Synth 8-3493] module 'control_unit' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/control_unit.vhd:5' does not have matching formal port for component port 'funct' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:59]
+ERROR: [Synth 8-3493] module 'control_unit' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/control_unit.vhd:5' does not have matching formal port for component port 'memtoreg' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:59]
+ERROR: [Synth 8-3493] module 'control_unit' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/control_unit.vhd:5' does not have matching formal port for component port 'regdst' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:59]
+WARNING: [Synth 8-5640] Port 'memread' is missing in component declaration [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:40]
+WARNING: [Synth 8-5640] Port 'regread' is missing in component declaration [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:40]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'data_path' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:7' bound to instance 'dp' of component 'data_path' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:66]
+ERROR: [Synth 8-3493] module 'data_path' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:7' does not have matching formal port for component port 'memtoreg' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:66]
+ERROR: [Synth 8-3493] module 'data_path' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/data_path.vhd:7' does not have matching formal port for component port 'regdst' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:66]
+ERROR: [Synth 8-285] failed synthesizing module 'processor' [Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1414.699 ; gain = 3.922
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+ERROR: [Common 17-39] 'refresh_design' failed due to earlier errors.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 29 10:16:16 2019...

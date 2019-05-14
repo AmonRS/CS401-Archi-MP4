@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Wed May  1 09:46:44 2019
+# Process ID: 8616
+# Current directory: Z:/CS-401-1-CompArch/MP3/CU_DPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2808 Z:\CS-401-1-CompArch\MP3\CU_DPU\CU_DPU.xpr
+# Log file: Z:/CS-401-1-CompArch/MP3/CU_DPU/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/MP3/CU_DPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 744.656 ; gain = 53.957
+update_compile_order -fileset sources_1
+close [ open Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/branch_mux.vhd w ]
+add_files Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/branch_mux.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/branch_mux.vhd] -no_script -reset -force -quiet
+remove_files  Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/branch_mux.vhd
+file delete -force Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.srcs/sources_1/new/branch_mux.vhd
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May  1 10:36:06 2019...

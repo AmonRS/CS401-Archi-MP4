@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Fri Apr 26 09:27:57 2019
+# Process ID: 8196
+# Current directory: Z:/CS-401-1-CompArch/MP3/CU_DPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent788 Z:\CS-401-1-CompArch\MP3\CU_DPU\CU_DPU.xpr
+# Log file: Z:/CS-401-1-CompArch/MP3/CU_DPU/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/MP3/CU_DPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.xpr
+update_compile_order -fileset sources_1

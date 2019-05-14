@@ -1,0 +1,1194 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Sun May  5 16:06:10 2019
+# Process ID: 9452
+# Current directory: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7208 Z:\CS-401-1-CompArch\MP3\CU_DPU_test1\CU_DPU.xpr
+# Log file: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 808.539 ; gain = 74.844
+export_ip_user_files -of_objects  [get_files Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_3.dat] -no_script -reset -force -quiet
+remove_files  Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_3.dat
+file delete -force Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_3.dat
+add_files -norecurse Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_4.dat
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: processor_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 954.918 ; gain = 106.059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'processor_top' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor_top.vhd:18]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'processor' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor.vhd:14' bound to instance 'processor1' of component 'processor' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor_top.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'processor' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'control_unit' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/control_unit.vhd:5' bound to instance 'cont' of component 'control_unit' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/control_unit.vhd:15]
+INFO: [Synth 8-3491] module 'main_decoder' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/main_decoder.vhd:6' bound to instance 'main_dc' of component 'main_decoder' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/control_unit.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'main_decoder' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/main_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'main_decoder' (1#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/main_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (2#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/control_unit.vhd:15]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'data_path' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:7' bound to instance 'dp' of component 'data_path' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'data_path' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/flipflop.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (3#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (4#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sl2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:7' bound to instance 'immsh' of component 'sl2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'sl2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:95]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:97]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd:23]
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'insld' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (7#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd:23]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'wrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized2' (7#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:112]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/signextender.vhd:5' bound to instance 'se' of component 'signext' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'signext' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/signextender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (8#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/signextender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:119]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/alu.vhd:11' bound to instance 'mainalu' of component 'alu' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'alu' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/alu.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-3848] Net modd in module/entity alu does not have driver. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/alu.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'alu' (9#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/alu.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'data_path' (10#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'processor' (11#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor_top.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'imem' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (12#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor_top.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_data.vhd:18]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dmem' (13#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_data.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'processor_top' (14#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor_top.vhd:18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[8]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[5]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 960.465 ; gain = 111.605
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 960.465 ; gain = 111.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 960.465 ; gain = 111.605
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mclk'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[4]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[5]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[6]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[7]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[6]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[5]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[4]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:15 . Memory (MB): peak = 1333.730 ; gain = 484.871
+52 Infos, 62 Warnings, 29 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1333.730 ; gain = 484.871
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun May  5 16:14:59 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim/memfile_4.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_instructions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity imem
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 22f1f50bc018488896c371ccba462f89 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_testbench_behav xil_defaultlib.processor_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behave of entity xil_defaultlib.main_decoder [main_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.sl2 [\sl2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=8)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path [\data_path(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.processor [\processor(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.dmem [\dmem(width=32)\]
+Compiling architecture processor_top of entity xil_defaultlib.processor_top [processor_top_default]
+Compiling architecture processor_testbench of entity xil_defaultlib.processor_testbench
+Built simulation snapshot processor_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1337.820 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_testbench_behav -key {Behavioral:sim_1:Functional:processor_testbench} -tclbatch {processor_testbench.tcl} -view {Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg
+source processor_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Index 80 out of bound 31 downto 0
+Time: 360 ns  Iteration: 3  Process: /processor_testbench/dut/processor1/dp/rf/line__41
+  File: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd
+
+HDL Line: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd:49
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1337.820 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+ERROR: Index 80 out of bound 31 downto 0
+Time: 360 ns  Iteration: 3  Process: /processor_testbench/dut/processor1/dp/rf/line__41
+  File: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd
+
+HDL Line: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd:49
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: processor_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1337.820 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'processor_top' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor_top.vhd:18]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'processor' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor.vhd:14' bound to instance 'processor1' of component 'processor' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor_top.vhd:54]
+INFO: [Synth 8-638] synthesizing module 'processor' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'control_unit' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/control_unit.vhd:5' bound to instance 'cont' of component 'control_unit' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/control_unit.vhd:15]
+INFO: [Synth 8-3491] module 'main_decoder' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/main_decoder.vhd:6' bound to instance 'main_dc' of component 'main_decoder' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/control_unit.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'main_decoder' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/main_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'main_decoder' (1#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/main_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (2#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/control_unit.vhd:15]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'data_path' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:7' bound to instance 'dp' of component 'data_path' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'data_path' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/flipflop.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (3#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:93]
+INFO: [Synth 8-638] synthesizing module 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (4#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sl2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:7' bound to instance 'immsh' of component 'sl2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'sl2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:95]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:97]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd:23]
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'insld' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (7#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd:23]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'wrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:108]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized2' (7#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:112]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/signextender.vhd:5' bound to instance 'se' of component 'signext' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'signext' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/signextender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (8#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/signextender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:119]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/alu.vhd:11' bound to instance 'mainalu' of component 'alu' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'alu' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/alu.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-3848] Net modd in module/entity alu does not have driver. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/alu.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'alu' (9#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/alu.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'data_path' (10#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'processor' (11#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor_top.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'imem' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (12#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor_top.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_data.vhd:18]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dmem' (13#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_data.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'processor_top' (14#1) [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor_top.vhd:18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[8]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[5]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1337.820 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1337.820 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1337.820 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mclk'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[4]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[5]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[6]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[7]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[6]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[5]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[4]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1383.172 ; gain = 45.352
+51 Infos, 62 Warnings, 29 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1383.172 ; gain = 45.352
+close_design
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun May  5 16:45:46 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim/memfile_4.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_path
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity regfile
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 22f1f50bc018488896c371ccba462f89 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_testbench_behav xil_defaultlib.processor_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behave of entity xil_defaultlib.main_decoder [main_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.sl2 [\sl2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=8)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path [\data_path(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.processor [\processor(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.dmem [\dmem(width=32)\]
+Compiling architecture processor_top of entity xil_defaultlib.processor_top [processor_top_default]
+Compiling architecture processor_testbench of entity xil_defaultlib.processor_testbench
+Built simulation snapshot processor_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1383.172 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_testbench_behav -key {Behavioral:sim_1:Functional:processor_testbench} -tclbatch {processor_testbench.tcl} -view {Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg
+source processor_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1383.172 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_4.dat] -no_script -reset -force -quiet
+remove_files  Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_4.dat
+file delete -force Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_4.dat
+add_files -norecurse Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_5.dat
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun May  5 16:58:55 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim/memfile_5.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_instructions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity imem
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 22f1f50bc018488896c371ccba462f89 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_testbench_behav xil_defaultlib.processor_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behave of entity xil_defaultlib.main_decoder [main_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.sl2 [\sl2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=8)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path [\data_path(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.processor [\processor(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.dmem [\dmem(width=32)\]
+Compiling architecture processor_top of entity xil_defaultlib.processor_top [processor_top_default]
+Compiling architecture processor_testbench of entity xil_defaultlib.processor_testbench
+Built simulation snapshot processor_testbench_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1383.172 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_testbench_behav -key {Behavioral:sim_1:Functional:processor_testbench} -tclbatch {processor_testbench.tcl} -view {Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg
+source processor_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1383.172 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+save_wave_config {Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun May  5 17:13:51 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim/memfile_5.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_path
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 22f1f50bc018488896c371ccba462f89 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_testbench_behav xil_defaultlib.processor_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behave of entity xil_defaultlib.main_decoder [main_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.sl2 [\sl2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=8)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path [\data_path(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.processor [\processor(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.dmem [\dmem(width=32)\]
+Compiling architecture processor_top of entity xil_defaultlib.processor_top [processor_top_default]
+Compiling architecture processor_testbench of entity xil_defaultlib.processor_testbench
+Built simulation snapshot processor_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1383.172 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_testbench_behav -key {Behavioral:sim_1:Functional:processor_testbench} -tclbatch {processor_testbench.tcl} -view {Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg
+source processor_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1383.172 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun May  5 17:20:28 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun May  5 17:22:25 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim/memfile_5.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity data_path
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 22f1f50bc018488896c371ccba462f89 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_testbench_behav xil_defaultlib.processor_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behave of entity xil_defaultlib.main_decoder [main_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.sl2 [\sl2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=8)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path [\data_path(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.processor [\processor(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.dmem [\dmem(width=32)\]
+Compiling architecture processor_top of entity xil_defaultlib.processor_top [processor_top_default]
+Compiling architecture processor_testbench of entity xil_defaultlib.processor_testbench
+Built simulation snapshot processor_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1383.172 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_testbench_behav -key {Behavioral:sim_1:Functional:processor_testbench} -tclbatch {processor_testbench.tcl} -view {Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg
+source processor_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1383.172 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_5.dat] -no_script -reset -force -quiet
+remove_files  Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_5.dat
+file delete -force Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_5.dat
+add_files -norecurse Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/memfile_6.dat
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Sun May  5 17:30:27 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.runs/synth_1/runme.log
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_testbench' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim/memfile_6.dat'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj processor_testbench_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_instructions.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity imem
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 22f1f50bc018488896c371ccba462f89 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_testbench_behav xil_defaultlib.processor_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behave of entity xil_defaultlib.main_decoder [main_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.sl2 [\sl2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=8)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path [\data_path(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.processor [\processor(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.dmem [\dmem(width=32)\]
+Compiling architecture processor_top of entity xil_defaultlib.processor_top [processor_top_default]
+Compiling architecture processor_testbench of entity xil_defaultlib.processor_testbench
+Built simulation snapshot processor_testbench_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1383.172 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_testbench_behav -key {Behavioral:sim_1:Functional:processor_testbench} -tclbatch {processor_testbench.tcl} -view {Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/processor_testbench_behav.wcfg
+source processor_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1383.172 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+run 20 ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May  5 17:32:57 2019...
