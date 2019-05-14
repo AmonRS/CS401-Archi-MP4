@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Tue May 14 04:23:06 2019
+# Process ID: 8900
+# Current directory: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13308 Z:\CS-401-1-CompArch\MP4\CU_DPU_test2_io\CU_DPU.xpr
+# Log file: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 888.121 ; gain = 156.395
+close [ open Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/vga_bb.vhd w ]
+add_files Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/vga_bb.vhd
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 04:35:05 2019...

@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Tue May 14 12:03:08 2019
+# Process ID: 12724
+# Current directory: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1896 Z:\CS-401-1-CompArch\MP4\CU_DPU_test2_io\CU_DPU.xpr
+# Log file: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.xpr
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
