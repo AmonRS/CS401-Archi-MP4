@@ -50,7 +50,9 @@ entity PmodJSTK_Demo is
            SCLK : out  STD_LOGIC;							-- Serial Clock, Pin 4, Port JA
            LED : out  STD_LOGIC_VECTOR (2 downto 0);	-- LEDs 2, 1, and 0
            AN : out  STD_LOGIC_VECTOR (3 downto 0);	-- Anodes for Seven Segment Display
-           SEG : out  STD_LOGIC_VECTOR (6 downto 0)); -- Cathodes for Seven Segment Display
+           SEG : out  STD_LOGIC_VECTOR (6 downto 0); -- Cathodes for Seven Segment Display
+           xpos: out STD_LOGIC_VECTOR(3 downto 0);
+           ypos: out STD_LOGIC_VECTOR(3 downto 0));
 end PmodJSTK_Demo;
 
 architecture Behavioral of PmodJSTK_Demo is
@@ -86,7 +88,8 @@ architecture Behavioral of PmodJSTK_Demo is
 					  RST : in  STD_LOGIC;
 					  DIN : in  STD_LOGIC_VECTOR(9 downto 0);
 					  AN  : out STD_LOGIC_VECTOR(3 downto 0);
-					  SEG : out STD_LOGIC_VECTOR(6 downto 0)
+					  SEG : out STD_LOGIC_VECTOR(6 downto 0);
+					  muxdata_out: out STD_LOGIC_VECTOR (3 downto 0)
 			 );
 
 		end component;
@@ -122,6 +125,13 @@ architecture Behavioral of PmodJSTK_Demo is
 			-- Signal carrying output data that user selected
 			signal posData : STD_LOGIC_VECTOR(9 downto 0);
 			
+			
+			
+			-- CUSTOM
+			signal xpos_inp: STD_LOGIC_VECTOR(9 downto 0);
+            signal ypos_inp: STD_LOGIC_VECTOR(9 downto 0);
+            signal trash_signal_3: STD_LOGIC_VECTOR(3 downto 0);
+			
 --  ===================================================================================
 -- 							  				Implementation
 --  ===================================================================================
@@ -152,7 +162,8 @@ begin
 					RST=>RST,
 					DIN=>posData,
 					AN=>AN,
-					SEG=>SEG
+					SEG=>SEG,
+					muxdata_out=>trash_signal_3
 			);
 			
 			
@@ -165,10 +176,33 @@ begin
 					RST=>RST,
 					CLKOUT=>sndRec
 			);
+			
+			
+			-- CUSTOM COMP.
+			xpos_proc : ssdCtrl port map(
+                    CLK=>CLK,
+                    RST=>RST,
+                    DIN=>xpos_inp,
+                    AN=>AN,
+                    SEG=>SEG,
+                    muxdata_out=>xpos
+            );
+            ypos_proc : ssdCtrl port map(
+                    CLK=>CLK,
+                    RST=>RST,
+                    DIN=>ypos_inp,
+                    AN=>AN,
+                    SEG=>SEG,
+                    muxdata_out=>ypos
+            );
+            
 
 
 			-- Use state of switch 0 to select output of X position or Y position data to SSD
 			posData <= (jstkData(9 downto 8) & jstkData(23 downto 16)) when (SW(0) = '1') else (jstkData(25 downto 24) & jstkData(39 downto 32));
+			
+			xpos_inp <= (jstkData(9 downto 8) & jstkData(23 downto 16));
+			ypos_inp <= (jstkData(25 downto 24) & jstkData(39 downto 32));
 
 			-- Data to be sent to PmodJSTK, lower two bits will turn on leds on PmodJSTK
 			sndData <= "100000" & SW(1) & SW(2);

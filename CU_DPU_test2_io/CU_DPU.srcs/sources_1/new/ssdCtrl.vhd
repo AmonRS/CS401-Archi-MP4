@@ -34,7 +34,8 @@ entity ssdCtrl is
            RST : in  STD_LOGIC;
            DIN : in  STD_LOGIC_VECTOR (9 downto 0);
            AN : out  STD_LOGIC_VECTOR (3 downto 0);
-           SEG : out  STD_LOGIC_VECTOR (6 downto 0));
+           SEG : out  STD_LOGIC_VECTOR (6 downto 0);
+           muxdata_out: out STD_LOGIC_VECTOR (3 downto 0));
 end ssdCtrl;
 
 architecture Behavioral of ssdCtrl is
@@ -80,6 +81,8 @@ architecture Behavioral of ssdCtrl is
 --  ===================================================================================
 begin
 
+            muxdata_out <= muxData;
+            
 			-------------------------------------------------
 			--  	  		 Convert Binary to BCD
 			------------------------------------------------

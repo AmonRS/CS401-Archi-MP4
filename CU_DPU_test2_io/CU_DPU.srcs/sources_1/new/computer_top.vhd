@@ -52,7 +52,9 @@ architecture Behavioral of computer_top is
              SCLK : out  STD_LOGIC;                            -- Serial Clock, Pin 4, Port JA
              LED : out  STD_LOGIC_VECTOR (2 downto 0);    -- LEDs 2, 1, and 0
              AN : out  STD_LOGIC_VECTOR (3 downto 0);    -- Anodes for Seven Segment Display
-             SEG : out  STD_LOGIC_VECTOR (6 downto 0)); -- Cathodes for Seven Segment Display
+             SEG : out  STD_LOGIC_VECTOR (6 downto 0);  -- Cathodes for Seven Segment Display
+             xpos: out STD_LOGIC_VECTOR(3 downto 0);
+             ypos: out STD_LOGIC_VECTOR(3 downto 0));
   end component;
 
   component processor_top  -- top-level design for testing
@@ -62,6 +64,7 @@ architecture Behavioral of computer_top is
          out_port_1 : out STD_LOGIC_VECTOR(31 downto 0)
          );
   end component;
+  
   
   -- this is a slowed signal clock provided to the mips_top set it from a lower bit on clk_div for a faster clock
   -- clk_div is a 29 bit counter provided by the display hex use bits from this to provide a slowed clock
@@ -76,6 +79,8 @@ architecture Behavioral of computer_top is
 
   signal sw_jstk: STD_LOGIC_VECTOR(2 downto 0);
   signal led_jstk: STD_LOGIC_VECTOR(2 downto 0);
+  signal xpos: STD_LOGIC_VECTOR(3 downto 0);
+  signal ypos: STD_LOGIC_VECTOR(3 downto 0);
   signal trash_signal_1: STD_LOGIC_VECTOR(3 downto 0);
   signal trash_signal_2: STD_LOGIC_VECTOR(6 downto 0);
 
@@ -109,7 +114,6 @@ begin
     sw_jstk <= SW(6 downto 4);
     --LED for jstk
     LED(10 downto 8) <= led_jstk;
-
     -- joystick port map
 	joystick: PmodJSTK_Demo port map(
 	        CLK => CLKM, 
@@ -120,6 +124,8 @@ begin
             MOSI => MOSI,
             SCLK => SCLK,
             LED => led_jstk,
+            xpos => xpos,
+            ypos => ypos,
             AN => trash_signal_1,
             SEG => trash_signal_2
 	 );
