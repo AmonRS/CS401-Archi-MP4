@@ -11,8 +11,9 @@ entity computer_top is -- top-level design for testing
        A_TO_G : out STD_LOGIC_VECTOR(6 downto 0);
        AN : out STD_LOGIC_VECTOR(7 downto 0);
        DP : out STD_LOGIC;
-       LED : out  STD_LOGIC_VECTOR(3 downto 0);
-       reset : in STD_LOGIC
+       LED : out  STD_LOGIC_VECTOR(15 downto 0);
+       reset : in STD_LOGIC;
+       BTNC, BTNU, BTNL, BTNR, BTND: in STD_LOGIC
 	   );
 end;
 --entity computer_top is
@@ -66,6 +67,7 @@ architecture Behavioral of computer_top is
   
   -- this data bus will hold a value for display by the hex display  
   signal display_bus: STD_LOGIC_VECTOR(31 downto 0); 
+  signal led_for_7seg: STD_LOGIC_VECTOR(3 downto 0);
   
   signal res: STD_LOGIC;
 
@@ -78,11 +80,20 @@ begin
     clk <= clk_div(27); 
     -- clk <= clk_div(26);
     -- clk <= clk_div(0);  -- use this in simulation (fast clk)
+    
+    -- LED signals from buttons
+    LED(15) <= BTNU;
+    LED(14) <= BTND;
+    LED(13) <= BTNL;
+    LED(12) <= BTNR;
+    
+    -- LED signals from 7-seg disp
+    LED(3 downto 0) <= led_for_7seg;
 
     proc1: processor_top port map( clk => clk, reset => reset, out_port_1 => display_bus );
 
     display: display_hex port map( CLKM  => CLKM,  x => display_bus, 
-	           A_TO_G => A_TO_G,  AN => AN,  DP => DP,  LED => LED, clk_div => clk_div ); 
+	           A_TO_G => A_TO_G,  AN => AN,  DP => DP,  LED => led_for_7seg, clk_div => clk_div ); 
 
 
 end Behavioral;
