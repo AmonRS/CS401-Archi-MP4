@@ -1,0 +1,33 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 22f1f50bc018488896c371ccba462f89 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot processor_testbench_behav xil_defaultlib.processor_testbench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture behave of entity xil_defaultlib.main_decoder [main_decoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.control_unit [control_unit_default]
+Compiling architecture asynchronous of entity xil_defaultlib.flopr [\flopr(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.adder [\adder(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.sl2 [\sl2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.regfile [\regfile(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.mux2 [\mux2(width=8)\]
+Compiling architecture behave of entity xil_defaultlib.signext [\signext(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.data_path [\data_path(width=32)\]
+Compiling architecture struct of entity xil_defaultlib.processor [\processor(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.imem [\imem(width=32)\]
+Compiling architecture behave of entity xil_defaultlib.dmem [\dmem(width=32)\]
+Compiling architecture processor_top of entity xil_defaultlib.processor_top [processor_top_default]
+Compiling architecture processor_testbench of entity xil_defaultlib.processor_testbench
+Built simulation snapshot processor_testbench_behav

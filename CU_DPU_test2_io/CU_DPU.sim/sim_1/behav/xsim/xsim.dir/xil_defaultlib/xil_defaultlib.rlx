@@ -1,0 +1,19 @@
+0.6
+2018.2
+Jul 26 2018
+19:36:16
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sim_1/new/processor_testbench.vhd,1556872790,vhdl,,,,processor_testbench,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/adder.vhd,1556555621,vhdl,,,,adder,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/alu.vhd,1556872724,vhdl,,,,alu,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/control_unit.vhd,1557505527,vhdl,,,,control_unit,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/data_path.vhd,1557162514,vhdl,,,,data_path,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/flipflop.vhd,1556555573,vhdl,,,,flopr,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/main_decoder.vhd,1557505557,vhdl,,,,main_decoder,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_data.vhd,1557505756,vhdl,,,,dmem,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mem_instructions.vhd,1557333760,vhdl,,,,imem,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/mux2.vhd,1556555658,vhdl,,,,mux2,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor.vhd,1556731193,vhdl,,,,processor,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/processor_top.vhd,1557506901,vhdl,,,,processor_top,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/registerfile.vhd,1557508086,vhdl,,,,regfile,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/shiftleft2.vhd,1556900526,vhdl,,,,sl2,,,,,,,,
+Z:/CS-401-1-CompArch/MP3/CU_DPU_test1/CU_DPU.srcs/sources_1/new/signextender.vhd,1556555760,vhdl,,,,signext,,,,,,,,

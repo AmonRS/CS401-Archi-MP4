@@ -1,7 +1,7 @@
 import re
 
-asm_file = open('test1.asm', 'r')
-hex_file = open('hex.dat', 'w')
+asm_file = open('./z/test1.asm', 'r')
+hex_file = open('./z/hex.dat', 'w')
 
 opcodes = {
     'and':'10' , 'or':'11' , 'xor':'12' , 'add':'13' , 'inc':'14' , 'mul':'15' , 'div':'16' , 'mod':'17',

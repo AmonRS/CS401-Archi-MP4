@@ -1,0 +1,172 @@
+/*
+
+Xilinx Vivado v2018.2.1 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2288692 on Thu Jul 26 18:24:02 MDT 2018
+IP Build: 2289599 on Thu Jul 26 21:09:20 MDT 2018
+
+Process ID: 516
+License: Customer
+
+Current time: 	Wed May 01 21:36:18 PDT 2019
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 64 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	asthapit21
+User home directory: C:/Users/asthapit21
+User working directory: Z:/CS-401-1-CompArch/MP3/CU_DPU
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/asthapit21/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/asthapit21/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/asthapit21/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	Z:/CS-401-1-CompArch/MP3/CU_DPU/vivado.log
+Vivado journal file location: 	Z:/CS-401-1-CompArch/MP3/CU_DPU/vivado.jou
+Engine tmp dir: 	Z:/CS-401-1-CompArch/MP3/CU_DPU/.Xil/Vivado-516-LAB-SCI-214-12
+
+Xilinx Environment Variables
+----------------------------
+VK_SDK_PATH: C:\Dev\1.1.77.0
+VULKAN_SDK: C:\Dev\1.1.77.0
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	158 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 513 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 65 MB (+65866kb) [00:00:06]
+// [Engine Memory]: 485 MB (+356768kb) [00:00:06]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: Z:\CS-401-1-CompArch\MP3\CU_DPU\CU_DPU.xpr. Version: Vivado v2018.2.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project Z:/CS-401-1-CompArch/MP3/CU_DPU/CU_DPU.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 71 MB (+2581kb) [00:00:10]
+// [Engine Memory]: 569 MB (+63231kb) [00:00:10]
+// [GUI Memory]: 82 MB (+7761kb) [00:00:11]
+// HMemoryUtils.trashcanNow. Engine heap size: 591 MB. GUI used memory: 41 MB. Current time: 5/1/19 9:36:21 PM PDT
+// [Engine Memory]: 605 MB (+7606kb) [00:00:12]
+// Project name: CU_DPU; location: Z:/CS-401-1-CompArch/MP3/CU_DPU; part: xc7a100tcsg324-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 747.133 ; gain = 50.148 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 33 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd)]", 1); // B (D, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd)]", 1); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), processor1 : processor(struct) (processor.vhd)]", 2); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), processor1 : processor(struct) (processor.vhd), cont : control_unit(Behavioral) (control_unit.vhd)]", 3); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), processor1 : processor(struct) (processor.vhd), dp : data_path(Behavioral) (data_path.vhd)]", 5); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), processor1 : processor(struct) (processor.vhd), cont : control_unit(Behavioral) (control_unit.vhd)]", 3, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), processor1 : processor(struct) (processor.vhd), cont : control_unit(Behavioral) (control_unit.vhd)]", 3, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), processor1 : processor(struct) (processor.vhd), dp : data_path(Behavioral) (data_path.vhd)]", 4); // B (D, ck)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // J
+// Elapsed time: 12 seconds
+selectCodeEditor("control_unit.vhd", 532, 516); // ce (w, ck)
+selectCodeEditor("control_unit.vhd", 481, 543); // ce (w, ck)
+// Elapsed time: 104 seconds
+selectCodeEditor("control_unit.vhd", 54, 545); // ce (w, ck)
+selectCodeEditor("control_unit.vhd", 56, 539); // ce (w, ck)
+// Elapsed time: 123 seconds
+selectCodeEditor("control_unit.vhd", 919, 307); // ce (w, ck)
+// [GUI Memory]: 86 MB (+162kb) [00:20:34]
+// [GUI Memory]: 91 MB (+718kb) [00:28:59]
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 42 MB. Current time: 5/1/19 10:06:26 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 39 MB. Current time: 5/1/19 10:36:26 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 39 MB. Current time: 5/1/19 11:06:26 PM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 40 MB. Current time: 5/1/19 11:36:26 PM PDT
+// [GUI Memory]: 96 MB (+288kb) [02:21:00]
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 40 MB. Current time: 5/2/19 12:06:27 AM PDT
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 39 MB. Current time: 5/2/19 12:36:27 AM PDT
+// Elapsed time: 10948 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), processor1 : processor(struct) (processor.vhd), dp : data_path(Behavioral) (data_path.vhd)]", 4, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), processor1 : processor(struct) (processor.vhd), dp : data_path(Behavioral) (data_path.vhd)]", 4, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), processor1 : processor(struct) (processor.vhd), dp : data_path(Behavioral) (data_path.vhd)]", 4, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [GUI Memory]: 103 MB (+2660kb) [03:07:30]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control_unit.vhd", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data_path.vhd", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), processor1 : processor(struct) (processor.vhd), dp : data_path(Behavioral) (data_path.vhd), mainalu : alu(behave) (alu.vhd)]", 15, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), processor1 : processor(struct) (processor.vhd), dp : data_path(Behavioral) (data_path.vhd), mainalu : alu(behave) (alu.vhd)]", 15, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("alu.vhd", 196, 599); // ce (w, ck)
+selectCodeEditor("alu.vhd", 506, 512); // ce (w, ck)
+typeControlKey((HResource) null, "alu.vhd", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 117 MB (+8963kb) [03:08:10]
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 12 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "control_unit.vhd", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data_path.vhd", 1); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), imem1 : imem(behave) (mem_instructions.vhd)]", 16, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), imem1 : imem(behave) (mem_instructions.vhd)]", 16, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), dmem1 : dmem(behave) (mem_data.vhd)]", 17, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), dmem1 : dmem(behave) (mem_data.vhd)]", 17, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), imem1 : imem(behave) (mem_instructions.vhd)]", 16, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), imem1 : imem(behave) (mem_instructions.vhd)]", 16, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), dmem1 : dmem(behave) (mem_data.vhd)]", 17, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), dmem1 : dmem(behave) (mem_data.vhd)]", 17, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), imem1 : imem(behave) (mem_instructions.vhd)]", 16, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), imem1 : imem(behave) (mem_instructions.vhd)]", 16, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), imem1 : imem(behave) (mem_instructions.vhd)]", 16, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), dmem1 : dmem(behave) (mem_data.vhd)]", 17, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), dmem1 : dmem(behave) (mem_data.vhd)]", 17, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), imem1 : imem(behave) (mem_instructions.vhd)]", 16, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), imem1 : imem(behave) (mem_instructions.vhd)]", 16, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), dmem1 : dmem(behave) (mem_data.vhd)]", 17, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), dmem1 : dmem(behave) (mem_data.vhd)]", 17, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), imem1 : imem(behave) (mem_instructions.vhd)]", 16, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, processor_top(processor_top) (processor_top.vhd), imem1 : imem(behave) (mem_instructions.vhd)]", 16, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 619 MB. GUI used memory: 49 MB. Current time: 5/2/19 1:06:28 AM PDT

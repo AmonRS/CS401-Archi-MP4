@@ -1,0 +1,647 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Mon May 13 19:25:31 2019
+# Process ID: 11844
+# Current directory: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2372 Z:\CS-401-1-CompArch\MP4\CU_DPU_test2_io\CU_DPU.xpr
+# Log file: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/vivado.log
+# Journal file: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.xpr
+INFO: [Project 1-313] Project file moved from 'Z:/CS-401-1-CompArch/MP3/CU_DPU_test1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 761.508 ; gain = 80.508
+close [ open Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd w ]
+add_files Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: processor_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 915.027 ; gain = 109.883
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'processor_top' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor_top.vhd:18]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'processor' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor.vhd:14' bound to instance 'processor1' of component 'processor' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor_top.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'processor' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'control_unit' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/control_unit.vhd:5' bound to instance 'cont' of component 'control_unit' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/control_unit.vhd:15]
+INFO: [Synth 8-3491] module 'main_decoder' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/main_decoder.vhd:6' bound to instance 'main_dc' of component 'main_decoder' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/control_unit.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'main_decoder' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/main_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'main_decoder' (1#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/main_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (2#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/control_unit.vhd:15]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'data_path' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:7' bound to instance 'dp' of component 'data_path' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'data_path' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/flipflop.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (3#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'adder' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (4#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sl2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:7' bound to instance 'immsh' of component 'sl2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'sl2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:97]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:99]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:23]
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'instr' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:47]
+WARNING: [Synth 8-614] signal 'ra1' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:47]
+WARNING: [Synth 8-614] signal 'ra2' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (7#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:23]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'wrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized2' (7#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:114]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/signextender.vhd:5' bound to instance 'se' of component 'signext' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'signext' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/signextender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (8#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/signextender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:121]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/alu.vhd:11' bound to instance 'mainalu' of component 'alu' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'alu' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/alu.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-3848] Net modd in module/entity alu does not have driver. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/alu.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'alu' (9#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/alu.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'data_path' (10#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'processor' (11#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor_top.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'imem' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (12#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor_top.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_data.vhd:18]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dmem' (13#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_data.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'processor_top' (14#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor_top.vhd:18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[8]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra1[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra1[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra1[5]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra2[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra2[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra2[5]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[5]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[23]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[22]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[21]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[15]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[14]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[13]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[12]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[11]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[10]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[9]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[8]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[5]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[4]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[3]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[2]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[1]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[0]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 959.480 ; gain = 154.336
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 959.480 ; gain = 154.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 959.480 ; gain = 154.336
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mclk'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[0]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[1]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[2]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[3]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[4]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[5]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[6]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[7]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[6]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[5]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[4]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[3]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[2]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[1]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[0]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1297.395 ; gain = 492.250
+52 Infos, 89 Warnings, 29 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 1297.395 ; gain = 492.250
+set_property top computer_top [current_fileset]
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1307.789 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'computer_top' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd:28]
+INFO: [Synth 8-3491] module 'processor_top' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor_top.vhd:6' bound to instance 'proc1' of component 'processor_top' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'processor_top' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor_top.vhd:18]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'processor' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor.vhd:14' bound to instance 'processor1' of component 'processor' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor_top.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'processor' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'control_unit' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/control_unit.vhd:5' bound to instance 'cont' of component 'control_unit' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/control_unit.vhd:15]
+INFO: [Synth 8-3491] module 'main_decoder' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/main_decoder.vhd:6' bound to instance 'main_dc' of component 'main_decoder' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/control_unit.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'main_decoder' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/main_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'main_decoder' (1#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/main_decoder.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (2#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/control_unit.vhd:15]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'data_path' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:7' bound to instance 'dp' of component 'data_path' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'data_path' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+	Parameter width bound to: 32 - type: integer 
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'flopr' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/flipflop.vhd:5' bound to instance 'pcreg' of component 'flopr' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'flopr' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'flopr' (3#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/flipflop.vhd:12]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd1' of component 'adder' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'adder' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'adder' (4#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/adder.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'sl2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:7' bound to instance 'immsh' of component 'sl2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'sl2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'sl2' (5#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/shiftleft2.vhd:13]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'adder' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/adder.vhd:7' bound to instance 'pcadd2' of component 'adder' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:97]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcbrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2' (6#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'pcmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:99]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'regfile' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:11' bound to instance 'rf' of component 'regfile' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:102]
+INFO: [Synth 8-638] synthesizing module 'regfile' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:23]
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-614] signal 'instr' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:47]
+WARNING: [Synth 8-614] signal 'ra1' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:47]
+WARNING: [Synth 8-614] signal 'ra2' is read in the process but is not in the sensitivity list [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (7#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/registerfile.vhd:23]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'wrmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:110]
+INFO: [Synth 8-638] synthesizing module 'mux2__parameterized2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux2__parameterized2' (7#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'resmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:114]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'signext' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/signextender.vhd:5' bound to instance 'se' of component 'signext' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:118]
+INFO: [Synth 8-638] synthesizing module 'signext' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/signextender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'signext' (8#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/signextender.vhd:11]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'mux2' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mux2.vhd:4' bound to instance 'srcbmux' of component 'mux2' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:121]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'alu' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/alu.vhd:11' bound to instance 'mainalu' of component 'alu' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:125]
+INFO: [Synth 8-638] synthesizing module 'alu' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/alu.vhd:21]
+	Parameter width bound to: 32 - type: integer 
+WARNING: [Synth 8-3848] Net modd in module/entity alu does not have driver. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/alu.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'alu' (9#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/alu.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'data_path' (10#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/data_path.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'processor' (11#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor.vhd:29]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'imem' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:10' bound to instance 'imem1' of component 'imem' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor_top.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'imem' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'imem' (12#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_instructions.vhd:16]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'dmem' declared at 'Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_data.vhd:11' bound to instance 'dmem1' of component 'dmem' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor_top.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'dmem' [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_data.vhd:18]
+	Parameter width bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dmem' (13#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/mem_data.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'processor_top' (14#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/processor_top.vhd:18]
+WARNING: [Synth 8-3848] Net A_TO_G in module/entity computer_top does not have driver. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd:9]
+WARNING: [Synth 8-3848] Net AN in module/entity computer_top does not have driver. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd:10]
+WARNING: [Synth 8-3848] Net DP in module/entity computer_top does not have driver. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd:11]
+WARNING: [Synth 8-3848] Net LED in module/entity computer_top does not have driver. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd:12]
+WARNING: [Synth 8-3848] Net SS in module/entity computer_top does not have driver. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd:16]
+WARNING: [Synth 8-3848] Net MOSI in module/entity computer_top does not have driver. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd:17]
+WARNING: [Synth 8-3848] Net SCLK in module/entity computer_top does not have driver. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd:18]
+WARNING: [Synth 8-3848] Net clk_div in module/entity computer_top does not have driver. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'computer_top' (15#1) [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd:28]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[8]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra1[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra1[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra1[5]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra2[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra2[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port ra2[5]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port wa3[5]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[23]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[22]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[21]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[15]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[14]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[13]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[12]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[11]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[10]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[9]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[8]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[5]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[4]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[3]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[2]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[1]
+WARNING: [Synth 8-3331] design regfile has unconnected port instr[0]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[31]
+WARNING: [Synth 8-3331] design sl2 has unconnected port a[30]
+WARNING: [Synth 8-3331] design computer_top has unconnected port A_TO_G[6]
+WARNING: [Synth 8-3331] design computer_top has unconnected port A_TO_G[5]
+WARNING: [Synth 8-3331] design computer_top has unconnected port A_TO_G[4]
+WARNING: [Synth 8-3331] design computer_top has unconnected port A_TO_G[3]
+WARNING: [Synth 8-3331] design computer_top has unconnected port A_TO_G[2]
+WARNING: [Synth 8-3331] design computer_top has unconnected port A_TO_G[1]
+WARNING: [Synth 8-3331] design computer_top has unconnected port A_TO_G[0]
+WARNING: [Synth 8-3331] design computer_top has unconnected port AN[3]
+WARNING: [Synth 8-3331] design computer_top has unconnected port AN[2]
+WARNING: [Synth 8-3331] design computer_top has unconnected port AN[1]
+WARNING: [Synth 8-3331] design computer_top has unconnected port AN[0]
+WARNING: [Synth 8-3331] design computer_top has unconnected port DP
+WARNING: [Synth 8-3331] design computer_top has unconnected port LED[6]
+WARNING: [Synth 8-3331] design computer_top has unconnected port LED[5]
+WARNING: [Synth 8-3331] design computer_top has unconnected port LED[4]
+WARNING: [Synth 8-3331] design computer_top has unconnected port LED[3]
+WARNING: [Synth 8-3331] design computer_top has unconnected port LED[2]
+WARNING: [Synth 8-3331] design computer_top has unconnected port LED[1]
+WARNING: [Synth 8-3331] design computer_top has unconnected port LED[0]
+WARNING: [Synth 8-3331] design computer_top has unconnected port SS
+WARNING: [Synth 8-3331] design computer_top has unconnected port MOSI
+WARNING: [Synth 8-3331] design computer_top has unconnected port SCLK
+WARNING: [Synth 8-3331] design computer_top has unconnected port CLKM
+WARNING: [Synth 8-3331] design computer_top has unconnected port MISO
+WARNING: [Synth 8-3331] design computer_top has unconnected port SW[2]
+WARNING: [Synth 8-3331] design computer_top has unconnected port SW[1]
+WARNING: [Synth 8-3331] design computer_top has unconnected port SW[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1315.637 ; gain = 7.848
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1315.637 ; gain = 7.848
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1315.637 ; gain = 7.848
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'mclk'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[0]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[1]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[2]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[3]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[4]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[5]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[6]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ld[7]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[6]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[5]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[4]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[3]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[2]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:64]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:64]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[1]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:65]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:65]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'a_to_g[0]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:66]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:66]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'dp'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:68]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:68]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[0]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[1]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[2]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[3]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[4]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[5]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[6]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'an[7]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:84]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:84]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:85]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:85]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:87]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc:87]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/constrs_1/imports/z/Nexys4DDR_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 1334.121 ; gain = 26.332
+close_design
+close [ open Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/display_hex.vhd w ]
+add_files Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/display_hex.vhd
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon May 13 20:06:50 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon May 13 20:07:51 2019] Launched impl_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon May 13 20:10:30 2019] Launched impl_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon May 13 20:12:05 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+[Mon May 13 20:12:22 2019] Launched synth_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 8
+[Mon May 13 20:13:24 2019] Launched impl_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Mon May 13 20:15:25 2019] Launched impl_1...
+Run output will be captured here: Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2.1
+  **** Build date : Jul 26 2018-19:38:10
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A4BEA5A
+set_property PROGRAM.FILE {Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.runs/impl_1/computer_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 20:20:24 2019...
