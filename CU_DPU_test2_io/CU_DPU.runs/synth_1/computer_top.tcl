@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -47,6 +46,14 @@ read_vhdl -library xil_defaultlib {
   Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/shiftleft2.vhd
   Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/computer_top.vhd
   Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/display_hex.vhd
+  Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/PmodJSTK_Demo.vhd
+  Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/PmodJSTK.vhd
+  Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/ssdCtrl.vhd
+  Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/ClkDiv_5Hz.vhd
+  Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/spiCtrl.vhd
+  Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/spiMode0.vhd
+  Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/ClkDiv_66_67kHz.vhd
+  Z:/CS-401-1-CompArch/MP4/CU_DPU_test2_io/CU_DPU.srcs/sources_1/new/Binary_To_BCD.vhd
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

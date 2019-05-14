@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
-| Date         : Mon May 13 23:10:55 2019
+| Date         : Tue May 14 02:09:41 2019
 | Host         : LAB-SCI-214-01 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file computer_top_control_sets_placed.rpt
 | Design       : computer_top
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     7 |
-| Unused register locations in slices containing registers |     2 |
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    16 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,8 +34,11 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      6 |            2 |
 |     14 |            1 |
-|    16+ |            6 |
+|    16+ |            9 |
 +--------+--------------+
 
 
@@ -46,10 +49,10 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              56 |            7 |
-| No           | No                    | Yes                    |              14 |            3 |
-| No           | Yes                   | No                     |             128 |           35 |
+| No           | No                    | Yes                    |             144 |           23 |
+| No           | Yes                   | No                     |             128 |           31 |
 | Yes          | No                    | No                     |               0 |            0 |
-| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | No                    | Yes                    |              24 |            5 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
@@ -57,16 +60,23 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------+---------------------------------------+---------------------------------------+------------------+----------------+
-|   Clock Signal  |             Enable Signal             |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
-+-----------------+---------------------------------------+---------------------------------------+------------------+----------------+
-|  clk_BUFG       |                                       | reset_IBUF                            |                3 |             14 |
-|  CLKM_IBUF_BUFG |                                       |                                       |                7 |             56 |
-|  n_0_20_BUFG    |                                       | proc1/processor1/dp/pcreg/AR[0]       |               18 |             64 |
-|  n_0_20_BUFG    |                                       | proc1/processor1/dp/pcreg/multOp_2[0] |               17 |             64 |
-|  clk_BUFG       |                                       |                                       |                8 |             64 |
-|  clk_BUFG       | proc1/processor1/dp/pcreg/multOp__0_3 |                                       |                8 |             64 |
-|  clk_BUFG       | proc1/processor1/dp/pcreg/we3         |                                       |               16 |            256 |
-+-----------------+---------------------------------------+---------------------------------------+------------------+----------------+
++--------------------------------+-------------------------------------------------------------+---------------------------------------+------------------+----------------+
+|          Clock Signal          |                        Enable Signal                        |            Set/Reset Signal           | Slice Load Count | Bel Load Count |
++--------------------------------+-------------------------------------------------------------+---------------------------------------+------------------+----------------+
+|  PmodJSTK_Int/CLKOUT           | joystick/PmodJSTK_Int/SPI_Int/rSR_0                         | joystick/PmodJSTK_Int/SPI_Ctrl/AR[0]  |                1 |              2 |
+|  PmodJSTK_Int/CLKOUT           |                                                             | joystick/PmodJSTK_Int/SPI_Ctrl/AR[0]  |                1 |              4 |
+|  joystick/genSndRec/LED_reg[2] |                                                             | joystick/PmodJSTK_Int/SPI_Ctrl/AR[0]  |                1 |              6 |
+| ~PmodJSTK_Int/CLKOUT           | joystick/PmodJSTK_Int/SPI_Ctrl/FSM_onehot_STATE_reg_n_1_[4] | joystick/PmodJSTK_Int/SPI_Ctrl/AR[0]  |                1 |              6 |
+|  clk_BUFG                      |                                                             | reset_IBUF                            |                2 |             14 |
+| ~PmodJSTK_Int/CLKOUT           | joystick/PmodJSTK_Int/SPI_Int/wSR_1                         | joystick/PmodJSTK_Int/SPI_Ctrl/AR[0]  |                3 |             16 |
+| ~PmodJSTK_Int/CLKOUT           |                                                             | joystick/PmodJSTK_Int/SPI_Ctrl/AR[0]  |                8 |             48 |
+|  CLKM_IBUF_BUFG                |                                                             |                                       |                7 |             56 |
+|  clk_BUFG                      |                                                             |                                       |                8 |             64 |
+|  clk_BUFG                      | proc1/processor1/dp/pcreg/multOp__0_3                       |                                       |                8 |             64 |
+|  n_0_31_BUFG                   |                                                             | proc1/processor1/dp/pcreg/AR[0]       |               16 |             64 |
+|  n_0_31_BUFG                   |                                                             | proc1/processor1/dp/pcreg/multOp_2[0] |               15 |             64 |
+|  CLKM_IBUF_BUFG                |                                                             | joystick/PmodJSTK_Int/SPI_Ctrl/AR[0]  |               11 |             72 |
+|  clk_BUFG                      | proc1/processor1/dp/pcreg/we3                               |                                       |               16 |            256 |
++--------------------------------+-------------------------------------------------------------+---------------------------------------+------------------+----------------+
 
 
